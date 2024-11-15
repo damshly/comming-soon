@@ -1,0 +1,55 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #000428, #004e92);
+  font-family: 'Arial', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 8vw; /* افتراضي: يتكيف مع عرض النافذة */
+  font-weight: bold;
+  color: #00c6ff;
+  text-shadow: 0 0 10px #004e92, 0 0 20px #00c6ff;
+}
+
+.subtitle {
+  font-size: 4vw; /* افتراضي: يتكيف مع عرض النافذة */
+  margin-top: 10px;
+  color: #b3d9ff;
+  text-shadow: 0 0 5px #004e92, 0 0 10px #00c6ff;
+}
+
+.byline {
+  margin-top: 20px;
+  font-size: 2.5vw; /* افتراضي */
+  color: #80bfff;
+  text-shadow: 0 0 3px #004e92;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* تصحيح الخط للأجهزة ذات الشاشات الكبيرة */
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem; /* حجم مناسب للشاشات الكبيرة */
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .byline {
+    font-size: 1rem;
+  }
+}
